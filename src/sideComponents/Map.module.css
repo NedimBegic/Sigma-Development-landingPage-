@@ -1,0 +1,15 @@
+.map {
+  width: 90%;
+  height: 20em;
+  border: none;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  margin-bottom: 3em;
+}
+
+@media (min-width: 1100px) {
+  .map {
+    width: 40em;
+    margin: 0;
+  }
+}

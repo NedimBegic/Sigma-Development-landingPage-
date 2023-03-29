@@ -21,6 +21,7 @@
 
 /*  only message div */
 .message {
+  display: flex;
   width: 100%;
 }
 
@@ -35,16 +36,90 @@
 
 .message form input {
   width: 80%;
+  height: 2em;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 5px;
+  margin: 0;
+  margin-bottom: 1em;
 }
 
 .message form textarea {
   width: 80%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
 }
 
 .message button {
   background: #90cd83;
-  border: 1px solid #000000;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
   color: white;
   padding: 0.3em 2em;
+  border: 1px solid black;
+  margin-bottom: 3em;
+}
+
+/* social media for company */
+.socialDiv {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 22em;
+}
+
+.greenLine {
+  width: 90%;
+  height: 0.2em;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(to right, #90cd83, #90cd8300);
+  margin-bottom: 1em;
+}
+.socialLinks {
+  display: flex;
+  gap: 1em;
+  font-size: 0.7em;
+  opacity: 0.7;
+}
+
+.socialDiv div p {
+  margin: 0;
+}
+
+.socialDiv div p:first-child {
+  margin-top: 0.4em;
+}
+@media (min-width: 1100px) {
+  .heading {
+    font-size: 2em;
+  }
+  .messageAndMap {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .message {
+    width: 40em;
+    height: auto;
+    margin-top: 4em;
+  }
+
+  .message form {
+    margin: 0;
+  }
+
+  .message form textarea {
+    height: 13em;
+  }
+
+  .message button {
+    align-self: flex-start;
+    margin-left: 5em;
+    padding: 0.5em 5em;
+  }
+
+  .socialDiv {
+    left: 22.5em;
+    margin-top: -1em;
+  }
 }
