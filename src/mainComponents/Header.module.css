@@ -1,0 +1,18 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+}
+
+.title h3 {
+  font-size: 0.7em;
+}
+
+.title h3 + h3 {
+  color: #4e9f3d;
+}
