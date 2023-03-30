@@ -1,0 +1,80 @@
+.footer {
+  width: 100%;
+  height: auto;
+  border-top-right-radius: 40px;
+  background-color: #4e9f3d;
+  margin-top: 2em;
+  color: white;
+  padding: 0.5em;
+  padding-right: 0;
+}
+
+/*  head div  */
+.heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.heading img {
+  width: 2em;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.heading h4 {
+  margin-left: -0.4em;
+  padding-left: 0;
+}
+
+.heading span {
+  padding-left: 1.6em;
+}
+
+/* the three divs with info */
+.divs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+/* links div */
+
+.links {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.6em;
+}
+
+.links h6 {
+  margin-bottom: 0;
+  font-size: 1.1em;
+  margin-bottom: 0.3em;
+}
+
+.links a,
+.links span {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.links a:hover {
+  opacity: 1;
+}
+
+@media (min-width: 1000px) {
+  .footer {
+    border-top-right-radius: 100px;
+  }
+  .divs {
+    flex-direction: row;
+    padding-left: 10em;
+    gap: 4em;
+  }
+  .heading {
+    padding-left: 9em;
+    font-size: 1.2em;
+  }
+}
