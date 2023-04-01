@@ -4,6 +4,8 @@ import insta from "../images/insta.png";
 import fb from "../images/fb.png";
 import link from "../images/link.png";
 import twiter from "../images/twiter.png";
+import bike from "../images/bike.png";
+import Square from "../sideComponents/Square";
 
 const Contact = () => {
   return (
@@ -13,6 +15,8 @@ const Contact = () => {
         <h2>us</h2>
       </div>
       <div className={styleContact.messageAndMap}>
+        <Square className={styleContact.square} />
+
         <div className={styleContact.message}>
           <form>
             <input type="text" name="name" placeholder="Full name" />
@@ -21,6 +25,7 @@ const Contact = () => {
             <button type="submit">SUBMIT</button>
           </form>
         </div>
+        <img className={styleContact.bike} src={bike} alt="bike" />
         <Map />
       </div>
       <div className={styleContact.socialDiv}>

@@ -10,16 +10,16 @@ const Memember = (props) => {
       <div className={styleMemember.image}>
         <img src={props.memberImg} alt="member" />
         <div className={styleMemember.icons}>
-          <a href={props.li}>
+          <a target="_blank" href={props.li}>
             <img src={link} alt="linkedIn" />
           </a>
-          <a href={props.instaHref}>
+          <a target="_blank" href={props.instaHref}>
             <img src={insta} alt="instagram" />
           </a>
-          <a href={props.fbHref}>
+          <a target="_blank" href={props.fbHref}>
             <img src={fb} alt="facebook" />
           </a>
-          <a href={props.twiterHref}>
+          <a target="_blank" href={props.twiterHref}>
             <img src={twiter} alt="twiter" />
           </a>
         </div>

@@ -5,13 +5,19 @@
   margin-bottom: 1em;
 }
 
+.memberImg {
+  object-fit: fill;
+}
 .image {
   display: flex;
+  gap: 0.3em;
+  clip: rect(0px, 60px, 200px, 0px);
 }
 
 .image > img {
   width: 8em;
   height: 8em;
+  border-radius: 20px;
 }
 
 .icons {
@@ -22,6 +28,13 @@
 
 .icons img {
   width: 1.5em;
+  opacity: 0.8;
+  transition: all 300ms ease-in;
+}
+
+.icons img:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .name {

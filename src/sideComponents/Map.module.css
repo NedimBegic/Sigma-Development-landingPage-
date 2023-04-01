@@ -5,6 +5,8 @@
   box-shadow: 0 0 10px black;
   border-radius: 10px;
   margin-bottom: 3em;
+  position: relative;
+  z-index: 3;
 }
 
 @media (min-width: 1100px) {
