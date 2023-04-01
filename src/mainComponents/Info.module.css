@@ -34,9 +34,14 @@
   line-break: auto;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 450px) {
   .info * {
-    font-size: 1.1em;
+    font-size: 1.13em;
+  }
+
+  .info p {
+    width: 100%;
+    padding-left: 7em;
   }
 }
 
@@ -46,7 +51,19 @@
   }
 
   .info p {
+    width: 100%;
     font-size: 0.9em;
+    line-break: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .info * {
+    font-size: 1.3em;
+  }
+
+  .info p {
+    width: 100%;
   }
 }
 
@@ -58,6 +75,8 @@
   .info p {
     font-size: 1em;
     margin-top: -1.5em;
+    width: 100%;
+    padding-left: 11em;
   }
   .info {
     justify-content: space-between;
@@ -65,5 +84,16 @@
   .info > img {
     display: block;
     margin-top: 3em;
+  }
+}
+
+@media (min-width: 1400px) {
+  .info * {
+    font-size: 1.4em;
+  }
+
+  .info p {
+    width: 100%;
+    padding-left: 5.6em;
   }
 }

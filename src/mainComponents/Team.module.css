@@ -28,3 +28,13 @@
     font-size: 1.2em;
   }
 }
+
+@media (min-width: 1400px) {
+  .heading {
+    font-size: 2em;
+  }
+
+  .memberDiv {
+    grid-template-columns: 35em 25em;
+  }
+}

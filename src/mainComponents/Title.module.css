@@ -78,4 +78,66 @@
   .images img {
     width: 10em;
   }
+  .name {
+    justify-content: center;
+    gap: 0.2em;
+  }
+}
+
+@media (min-width: 650px) {
+  .title * {
+    font-size: 1.1em;
+  }
+  .name {
+    gap: 2em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .title * {
+    font-size: 1.3em;
+  }
+  .name {
+    gap: 2em;
+  }
+
+  .images img {
+    font-size: 1.6em;
+  }
+}
+
+@media (min-width: 1400px) {
+  .title * {
+    font-size: 1.2em;
+  }
+
+  .reach h2 {
+    font-size: 2em;
+    margin-top: 2em;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  .reach h1 {
+    font-size: 3.4em;
+    margin-top: 0;
+    margin-top: -0.3em;
+  }
+
+  .name {
+    align-items: center;
+    gap: 5em;
+  }
+  .squares {
+    font-size: 2em;
+  }
+
+  .images img {
+    font-size: 2em;
+    top: -0.9em;
+  }
+
+  .images img + img {
+    top: -1em;
+    left: -1.4em;
+  }
 }

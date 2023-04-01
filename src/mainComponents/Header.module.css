@@ -16,3 +16,9 @@
 .title h3 + h3 {
   color: #4e9f3d;
 }
+
+@media (min-width: 1100px) {
+  .title {
+    font-size: 1.6em;
+  }
+}

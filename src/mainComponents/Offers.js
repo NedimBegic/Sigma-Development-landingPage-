@@ -6,18 +6,33 @@ const Offers = () => {
   return (
     <div className={styleOffers.sectionOffer}>
       <div className={styleOffers.heading}>
-        <Square className={styleOffers.fourth} />
-        <Square className={styleOffers.third} />
-        <Square className={styleOffers.second} />
-        <Square />
+        <div className={styleOffers.squaresDiv}>
+          <Square className={styleOffers.nineth} />
+          <Square className={styleOffers.eighth} />
+          <Square className={styleOffers.seventh} />
+          <Square className={styleOffers.sixth} />
+          <Square className={styleOffers.fifth} />
+          <Square className={styleOffers.fourth} />
+          <Square className={styleOffers.third} />
+          <Square className={styleOffers.second} />
+          <Square className={styleOffers.first} />
+        </div>
+
         <div className={styleOffers.titleDiv}>
           <h2>OUR&nbsp;</h2>
           <h2>OFFERS</h2>
         </div>
-        <Square />
-        <Square className={styleOffers.second} />
-        <Square className={styleOffers.third} />
-        <Square className={styleOffers.fourth} />
+        <div className={styleOffers.squaresDiv}>
+          <Square className={styleOffers.first} />
+          <Square className={styleOffers.second} />
+          <Square className={styleOffers.third} />
+          <Square className={styleOffers.fourth} />
+          <Square className={styleOffers.fifth} />
+          <Square className={styleOffers.sixth} />
+          <Square className={styleOffers.seventh} />
+          <Square className={styleOffers.eighth} />
+          <Square className={styleOffers.nineth} />
+        </div>
       </div>
       <div className={styleOffers.pacagesDiv}>
         <Offer heading={"Startup package"} price={"236"}>

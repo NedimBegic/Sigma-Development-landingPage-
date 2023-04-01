@@ -19,6 +19,12 @@
   color: #4e9f3d;
 }
 
+.squaresDiv {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.8em;
+}
+
 .pacagesDiv {
   width: 100%;
   display: flex;
@@ -28,7 +34,13 @@
 }
 
 /* squares style */
-
+.fifth,
+.sixth,
+.seventh,
+.eighth,
+.nineth {
+  display: none;
+}
 .second {
   font-size: 0.9em;
   opacity: 0.9;
@@ -44,6 +56,17 @@
   opacity: 0.7;
 }
 
+@media (min-width: 650px) {
+  .heading {
+    font-size: 1.5em;
+  }
+  .fifth {
+    display: block;
+    font-size: 0.6em;
+    opacity: 0.6;
+  }
+}
+
 @media (min-width: 1000px) {
   .pacagesDiv {
     flex-direction: row;
@@ -54,12 +77,121 @@
   }
 
   .titleDiv h2 {
-    font-size: 3em;
+    font-size: 2em;
+  }
+  .fifth,
+  .sixth,
+  .seventh,
+  .eighth,
+  .nineth {
+    display: block;
+  }
+  .first {
+    font-size: 2em;
+  }
+
+  .second {
+    font-size: 1.9em;
+    opacity: 0.9;
+  }
+
+  .third {
+    font-size: 1.8em;
+    opacity: 0.8;
+  }
+
+  .fourth {
+    font-size: 1.7em;
+    opacity: 0.7;
+  }
+
+  .fifth {
+    font-size: 1.6em;
+    opacity: 0.6;
+  }
+
+  .sixth {
+    font-size: 1.5em;
+    opacity: 0.5;
+  }
+
+  .seventh {
+    font-size: 1.4em;
+    opacity: 0.4;
+  }
+
+  .eighth {
+    font-size: 1.3em;
+    opacity: 0.3;
+  }
+
+  .nineth {
+    font-size: 1.2em;
+    opacity: 0.2;
   }
 }
 
 @media (min-width: 1190px) {
   .secondOffer {
     margin-top: -5em;
+  }
+
+  @media (min-width: 1400px) {
+    .heading {
+      font-size: 1.9em;
+    }
+
+    .squaresDiv {
+      gap: 0.3em;
+    }
+
+    .titleDiv {
+      padding: 0 0.8em;
+    }
+    /* squares style */
+
+    .first {
+      font-size: 2em;
+    }
+
+    .second {
+      font-size: 1.9em;
+      opacity: 0.9;
+    }
+
+    .third {
+      font-size: 1.8em;
+      opacity: 0.8;
+    }
+
+    .fourth {
+      font-size: 1.7em;
+      opacity: 0.7;
+    }
+
+    .fifth {
+      font-size: 1.6em;
+      opacity: 0.6;
+    }
+
+    .sixth {
+      font-size: 1.5em;
+      opacity: 0.5;
+    }
+
+    .seventh {
+      font-size: 1.4em;
+      opacity: 0.4;
+    }
+
+    .eighth {
+      font-size: 1.3em;
+      opacity: 0.3;
+    }
+
+    .nineth {
+      font-size: 1.2em;
+      opacity: 0.2;
+    }
   }
 }
