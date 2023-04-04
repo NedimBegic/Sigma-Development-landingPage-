@@ -9,7 +9,7 @@ const Info = () => {
       <img src={leftPerson} alt="leftPerson" />
       <div className={styleInfo.headingDiv}>
         <div className={styleInfo.heading}>
-          <Square />
+          <Square className={styleInfo.square} />
           <div className={styleInfo.headingTitle}>
             <h2>WHAT IS SIGMA&nbsp;</h2>
             <h2 style={{ color: "#4e9f3d" }}>DEVELOPMENT</h2>

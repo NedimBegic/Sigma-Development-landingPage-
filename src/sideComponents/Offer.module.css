@@ -2,7 +2,7 @@
   width: 90%;
   max-width: 24em;
   height: 30em;
-  background: linear-gradient(#4e9f3d80, #90cd8380);
+  background-color: #4e9f3d80;
   border-radius: 5px;
   color: white;
   margin-bottom: 3em;
@@ -11,15 +11,16 @@
 }
 
 .card h3 {
-  text-decoration: underline;
-  padding-left: 2em;
-  font-weight: 500;
+  font-weight: 900;
+  font-size: 1.6em;
+  text-align: center;
 }
 
 .card h4 {
   position: absolute;
   bottom: 1em;
-  padding-left: 1.5em;
-  font-size: 1.2em;
+  font-size: 1.8em;
+  width: 100%;
+  text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

@@ -2,13 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3em;
-  margin-bottom: 2em;
+  margin-top: -1em;
+
   position: relative;
 }
 
 .heading {
   display: flex;
+  font-size: 1.3em;
+  margin-bottom: -1.5em;
 }
 
 .heading h2 + h2 {
@@ -18,14 +20,26 @@
 .square {
   display: none;
 }
+@media (min-width: 550px) {
+  .heading {
+    font-size: 1.7em;
+  }
+}
 
+@media (min-width: 750px) {
+  .memberDiv {
+    display: grid;
+    grid-template-columns: 17em 19em;
+    column-gap: 2em;
+  }
+}
 @media (min-width: 1100px) {
   .heading {
     font-size: 1.5em;
   }
   .memberDiv {
     display: grid;
-    grid-template-columns: 25em 19em;
+    grid-template-columns: 25em 25em;
     column-gap: 2em;
   }
 
@@ -34,7 +48,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1300px) {
   .heading {
     font-size: 2em;
   }
@@ -52,10 +66,6 @@
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     transition: all 500ms ease;
-
-    animation-name: squares;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
   }
 
   .square:hover {
@@ -63,122 +73,93 @@
     cursor: pointer;
   }
 
-  @keyframes squares {
-    /*    0% {
-      transform: translateX(0%);
-    }
-    25% {
-      transform: translateX(5%);
-    }
-    50% {
-      transform: translateX(0%);
-    }
-    75% {
-      transform: translateX(-5%);
-    }
-    100% {
-      transform: translateX(0%);
-    } */
-
-    0% {
-      transform: translateX(-5%);
-    }
-
-    50% {
-      transform: translateX(5%);
-    }
-
-    100% {
-      transform: translateX(-5%);
-    }
-  }
   .s1 {
-    right: 15em;
+    right: 12em;
     top: 7em;
   }
 
   .s2 {
-    right: 7em;
+    right: 4em;
     top: 12em;
   }
 
   .s3 {
-    right: 15em;
+    right: 12em;
     top: 17em;
   }
 
   .s4 {
-    right: 7em;
+    right: 4em;
     top: 22em;
   }
 
   .s5 {
-    right: 15em;
+    right: 12em;
     top: 27em;
   }
 
   .s6 {
-    right: 7em;
+    right: 4em;
     top: 32em;
   }
 
   .s7 {
-    right: 15em;
+    right: 12em;
     top: 37em;
   }
 
   .s8 {
-    right: 7em;
+    right: 4em;
     top: 42em;
   }
 
   .s9 {
-    right: 15em;
+    right: 12em;
     top: 47em;
   }
 
   .s10 {
-    left: 12em;
+    left: 9.5em;
     top: 7em;
   }
 
   .s11 {
-    left: 4em;
+    left: 2em;
     top: 12em;
   }
 
   .s12 {
-    left: 12em;
+    left: 9.5em;
     top: 17em;
   }
 
   .s13 {
-    left: 4em;
+    left: 2em;
     top: 22em;
   }
 
   .s14 {
-    left: 12em;
+    left: 9.5em;
     top: 27em;
   }
 
   .s15 {
-    left: 4em;
+    left: 2em;
     top: 32em;
   }
 
   .s16 {
-    left: 12em;
+    left: 9.5em;
     top: 37em;
   }
 
   .s17 {
-    left: 4em;
+    left: 2em;
     top: 42em;
   }
 
   .s18 {
-    left: 12em;
+    left: 9.5em;
     top: 47em;
   }
 }

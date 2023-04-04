@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 1.3em;
+}
+
+.squares {
+  display: none;
 }
 
 .reach {
@@ -63,7 +68,7 @@
   right: 0.8em;
 }
 .images img {
-  width: 7em;
+  width: 9em;
 }
 
 @media (min-width: 450px) {
@@ -106,9 +111,18 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .squares {
+    display: block;
+  }
+  .title {
+    margin-top: -1.1em;
+  }
+}
+
 @media (min-width: 1400px) {
   .title * {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
   .reach h2 {
