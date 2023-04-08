@@ -6,8 +6,32 @@ import link from "../images/link.png";
 import twiter from "../images/twiter.png";
 import bike from "../images/bike.png";
 import Square from "../sideComponents/Square";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_vlan1v4",
+        "template_sc37x1o",
+        form.current,
+        "3-io-zQlRB8FISNHb"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   return (
     <div>
       <div className={styleContact.heading}>
@@ -18,10 +42,15 @@ const Contact = () => {
         <Square className={styleContact.square} />
 
         <div className={styleContact.message}>
-          <form>
-            <input type="text" name="name" placeholder="Full name" />
+          <form ref={form} onSubmit={sendEmail}>
+            <input type="text" name="from_name" placeholder="Full name" />
             <input type="text" name="email" placeholder="E-mail" />
-            <textarea rows="10" cols="20" placeholder="Message"></textarea>
+            <textarea
+              name="message"
+              rows="10"
+              cols="20"
+              placeholder="Message"
+            ></textarea>
             <button type="submit">SUBMIT</button>
           </form>
         </div>
