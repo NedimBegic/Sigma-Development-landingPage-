@@ -1,0 +1,28 @@
+.all {
+  width: 100%;
+  color: #4e9f3d4d;
+  display: flex;
+  gap: 0.2em;
+  margin-bottom: 3em;
+  margin-top: 3em;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column * {
+  opacity: 0.9;
+}
+
+.column *:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+@media (min-width: 1300px) {
+  .all {
+    font-size: 1.3em;
+  }
+}

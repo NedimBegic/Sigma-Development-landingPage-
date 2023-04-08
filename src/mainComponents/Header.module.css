@@ -2,7 +2,20 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  position: relative;
+  height: 100vh;
+}
+.header video {
+  position: absolute;
+  z-index: -1;
+  object-fit: fill;
+  opacity: 0.8;
+  background: #4e9f3d;
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 .title {
@@ -10,7 +23,8 @@
 }
 
 .title h3 {
-  font-size: 0.7em;
+  font-size: 1.2em;
+  margin: 0;
 }
 
 .title h3 + h3 {
