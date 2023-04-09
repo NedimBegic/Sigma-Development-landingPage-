@@ -17,18 +17,16 @@ const Info = () => {
           </div>
         </div>
         <p>
-          Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit.
-          Maecenas suscipit nibh nec <br /> elementum blandit. Nam pulvinar ut
-          sapien sit amet feugiat. <br />
-          Nam id tristique nulla. Aliquam semper ligula velit, id accumsan odio
-          semper ac.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+          suscipit nibh nec elementum blandit. Nam pulvinar ut sapien sit amet
+          feugiat. Nam id tristique nulla. Aliquam semper ligula velit, id
+          accumsan odio semper ac.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit.
-          Maecenas suscipit nibh nec <br /> elementum blandit. Nam pulvinar ut
-          sapien sit amet feugiat. <br />
-          Nam id tristique nulla. Aliquam semper ligula velit, id accumsan odio
-          semper ac.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+          suscipit nibh nec elementum blandit. Nam pulvinar ut sapien sit amet
+          feugiat. Nam id tristique nulla. Aliquam semper ligula velit, id
+          accumsan odio semper ac.
         </p>
       </div>
       <img src={rightPerson} alt="rightPerson" />

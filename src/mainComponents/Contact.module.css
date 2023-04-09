@@ -41,7 +41,7 @@
 .message form input {
   width: 80%;
   height: 2em;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 0px 0px 5px black;
   border-radius: 5px;
   margin: 0;
   margin-bottom: 1em;
@@ -50,15 +50,15 @@
 .message form textarea {
   width: 80%;
   border-radius: 5px;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 0px 0px 5px black;
   padding-left: 1em;
   padding: 0.5em;
 }
 .message form input:focus,
 .message form textarea:focus {
   border: none;
-  outline-color: #90cd83;
-  border-bottom: 5px solid #4e9f3d;
+  outline: none;
+  border-bottom: 3px solid #4e9f3d;
 }
 
 .message button {

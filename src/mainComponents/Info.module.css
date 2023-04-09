@@ -31,7 +31,8 @@
 }
 
 .headingDiv p {
-  font-size: 0.7em;
+  font-size: 1em;
+  line-height: 1.7em;
   margin: 0;
   margin-top: -0.5em;
   padding-left: 1.3em;
@@ -39,6 +40,12 @@
   line-break: auto;
 }
 
+@media (min-width: 320px) and (max-width: 450px) {
+  .info {
+    margin-top: 2em;
+    font-size: 1.16em;
+  }
+}
 @media (min-width: 360px) {
   .headingDiv p + {
     padding-left: 3em;

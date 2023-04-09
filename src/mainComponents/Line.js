@@ -5,9 +5,10 @@ import { faLaptop } from "@fortawesome/free-solid-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import { faWifi } from "@fortawesome/free-solid-svg-icons";
 
-const Line = () => {
+const Line = (props) => {
+  const style = styleLine.all + " " + props.className;
   return (
-    <div className={styleLine.all}>
+    <div className={style}>
       <div className={styleLine.column}>
         <FontAwesomeIcon icon={faCode} />
         <FontAwesomeIcon icon={faCode} />

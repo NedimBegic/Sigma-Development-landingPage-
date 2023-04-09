@@ -4,13 +4,14 @@ import Offers from "../mainComponents/Offers";
 import Team from "../mainComponents/Team";
 import Contact from "../mainComponents/Contact";
 import Line from "../mainComponents/Line";
+import styleHomePage from "./HomePage.module.css";
 const HomePage = () => {
   return (
     <div>
       <Title />
-      <Line />
+      <Line className={styleHomePage.firstLine} />
       <Info />
-      <Line />
+      <Line className={styleHomePage.secondLine} />
       <Offers />
       <Line />
       <Team />

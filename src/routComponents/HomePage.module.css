@@ -1,0 +1,9 @@
+@media (min-width: 320px) and (max-width: 450px) {
+  .firstLine {
+    margin-top: 12em;
+  }
+
+  .secondLine {
+    margin-top: 8em;
+  }
+}
